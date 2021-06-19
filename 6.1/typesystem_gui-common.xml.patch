@@ -1,0 +1,17 @@
+﻿--- F:\Works\WinJava\qtjambi-6.1\generator\typesystem\xml\typesystem_gui-common.xml	2021-06-16 13:18:31.000000000 +0800
++++ F:\Works\WinJava\qtjambi-6.1222\qtjambi-6.1\generator\typesystem\xml\typesystem_gui-common.xml	2021-05-07 05:12:55.000000000 +0800
+@@ -2982,13 +2982,13 @@
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QFontPrivate const\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QTextDocumentPrivate const\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QPlatformBackingStore\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QPlatformNativeInterface\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QPostEventList\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QPlatformPixmap\*'"/>
+-    <!-- <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QAbstractNativeEventFilter\*'"/> -->
++    <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QAbstractNativeEventFilter\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QFunctionPointer'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QPlatformOpenGLContext\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QOpenGLVersionStatus const&amp;'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QPlatformOffscreenSurface\*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QMatrix4x3*'"/>
+     <suppress-warning text="WARNING(MetaJavaBuilder) :: skipping * unmatched *type 'QMatrix4x2*'"/>

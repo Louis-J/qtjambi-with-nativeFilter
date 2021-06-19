@@ -1,0 +1,16 @@
+﻿--- F:\Works\WinJava\qtjambi-6.1\generator\typesystem\xml\typesystem_core-java.xml	2021-06-18 16:11:40.000000000 +0800
++++ F:\Works\WinJava\qtjambi-6.1222\qtjambi-6.1\generator\typesystem\xml\typesystem_core-java.xml	2021-05-07 05:12:55.000000000 +0800
+@@ -239,13 +239,12 @@
+     <primitive-type name="char32_t" java-name="int" preferred-conversion="no" jni-name="jint"/>
+ 
+     <primitive-type name="jobject" java-name="java.lang.Object" preferred-conversion="no" jni-name="jobject"/>
+     <primitive-type name="std::nullptr_t" java-name="null" preferred-conversion="no" jni-name="std::nullptr_t"/>
+ 
+ 
+-    <object-type name="QAbstractNativeEventFilter"/>
+     <value-type name="QDate">
+         <extra-includes>
+             <include file-name="qtjambi_core_repository.h" location="local"/>
+         </extra-includes>
+         <inject-code>
+             <import-file name="typesystem/java/typesystem_core-java.java" quote-after-line="class QDate___" quote-before-line="}// class"/>

@@ -1,0 +1,6 @@
+F:
+cd F:\Works\WinJava\qtjambi-6.1
+set JAVA_HOME_TARGET=C:\Program Files\AdoptOpenJDK\jdk-15.0.2.7-hotspot
+set PATH=F:\Program\ProMaker\Java\apache-ant-1.10.10\bin;%PATH%
+set QTDIR=F:\Program\ProMaker\CCPP\Qt_MSVC\6.1.0\msvc2019_64
+ant all

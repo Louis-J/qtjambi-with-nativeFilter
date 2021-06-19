@@ -1,0 +1,63 @@
+﻿--- F:\Works\WinJava\qtjambi-6.1\generator\typesystem\xml\typesystem_core-common.xml	2021-06-19 10:48:38.000000000 +0800
++++ F:\Works\WinJava\qtjambi-6.1222\qtjambi-6.1\generator\typesystem\xml\typesystem_core-common.xml	2021-05-07 05:12:55.000000000 +0800
+@@ -516,20 +516,20 @@
+     <rejection class="QByteArray" function-name="crbegin"/>
+     <rejection class="QByteArray" function-name="empty"/>
+     <rejection class="QByteArray" function-name="erase"/>
+     <rejection class="QByteArray" function-name="fromStdString"/>
+     <rejection class="QByteArray" function-name="reallocData"/>
+     <rejection class="QByteArray" function-name="reallocGrowData"/>
+-    <!-- <rejection class="QAbstractEventDispatcher" function-name="installNativeEventFilter"/>
+-    <rejection class="QAbstractEventDispatcher" function-name="removeNativeEventFilter"/> -->
++    <rejection class="QAbstractEventDispatcher" function-name="installNativeEventFilter"/>
++    <rejection class="QAbstractEventDispatcher" function-name="removeNativeEventFilter"/>
+     <rejection class="QCborContainerPrivate"/>
+     <rejection class="QAbstractFileEnginePrivate"/>
+     <rejection class="QException"/>
+     <rejection class="QUnhandledException"/>
+     <rejection class="QMessageLogger"/>
+-    <!-- <rejection class="QAbstractNativeEventFilter"/> -->
++    <rejection class="QAbstractNativeEventFilter"/>
+     <rejection class="QJsonArray" function-name="operator[]"/>
+     <rejection class="Qt" function-name="codecForHtml"/>
+     <rejection class="Qt" function-name="mightBeRichText"/>
+     <rejection class="Qt" function-name="escape"/>
+     <rejection class="Qt" function-name="convertFromPlainText"/>
+     <rejection class="Qt" function-name="makePropertyBinding"/>
+@@ -992,13 +992,12 @@
+     <enum-type name="QTimeZone::NameType"/>
+     
+     <enum-type name="QSysInfo::Endian"/>
+     <enum-type name="Qt::ReturnByValueConstant" since="5.15.0" generate="no"/>
+     <namespace-type name="QSysInfo"/>
+     
+-    <object-type name="QAbstractNativeEventFilter"/>
+     <value-type name="QVectorSpecialMethods" generate="no"/>
+     <value-type name="QLine"/>
+     <value-type name="QLineF"/>
+ 
+     <value-type name="QElapsedTimer" />
+     <value-type name="QProcessEnvironment">
+@@ -2387,22 +2386,11 @@
+     <object-type name="QCoreApplication" is-value-owner="yes">
+         <extra-includes>
+         <include file-name="QStringList" location="global"/>
+         <include file-name="qtjambi/qtjambi_jobjectwrapper.h" location="global"/>
+         </extra-includes>
+ 
+-        <modify-function signature="installNativeEventFilter(QAbstractNativeEventFilter *)" thread-affine="ui">
+-            <modify-argument index="1" thread-affine="yes">
+-                <reference-count action="add" variable-name="__rcAbstractNativeEventFilters"/>
+-            </modify-argument>
+-        </modify-function>
+-        <modify-function signature="removeNativeEventFilter(QAbstractNativeEventFilter *)" thread-affine="ui">
+-            <modify-argument index="1" thread-affine="yes">
+-                <reference-count action="remove" variable-name="__rcAbstractNativeEventFilters"/>
+-            </modify-argument>
+-        </modify-function>
+ 
+         <modify-function signature="notify(QObject*,QEvent*)" no-except="yes">
+             <modify-argument index="2" invalidate-after-use="yes" />
+         </modify-function>
+ 
+ <!--        <modify-function signature="QCoreApplication(int &amp;, char **)"> -->
